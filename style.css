@@ -1,0 +1,275 @@
+body{
+	background-image: url(./images/background.png);
+	font-family: Calibri,'Tahoma', sans-serif;
+	color:#2e2e1f;
+	margin:0;
+	padding:0;
+}
+img{
+	vertical-align: bottom;
+	border:2px solid silver;
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+}
+a{
+	text-decoration: none;
+	color:#2e2e1f;
+}
+/*=============================================*/
+.wrapper{
+	width:1000px;
+	margin:0 auto;
+	overflow:hidden;
+}
+#header{
+	background:#1f2465;
+	border-bottom:4px solid black;
+	overflow:hidden;
+}
+#header .wrapper{
+	background:#080c3c;
+}
+#main{
+	background-color:#f2f2f2;
+	width:980px;
+	min-height:800px;
+	padding:10px;
+	float:left;
+	overflow: hidden;
+}
+#footer{
+	background:silver;
+	text-align:center;
+	clear:both;
+	overflow:hidden;
+}
+/*======================================================*/
+#logo{
+	/*float:left;*/
+	/*border-right:1px solid rgba(255,255,255,0.4);*/
+}
+#logo a{
+	color:white;
+	font-weight:bold;
+	font-size:25px;
+	height:20px;
+	padding:25px 15px 25px;
+	display:block;
+}
+/* ===================================================== */
+#nav{
+	padding-left:10px;
+	float:left;
+}
+#nav ul{
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+#nav ul li{
+	float:left;
+}
+#nav ul li a {
+	color:silver;
+	height:20px;
+	padding:5px 15px 5px;
+	display:block;
+	font-weight:bold;
+}
+#nav ul li a:hover {
+	color:#e0ccff;
+}
+/* ============================================ */
+#main .block h1, 
+#main .block h2 {
+	border-bottom:1px solid #8400ff;
+	font-size:26px;
+}
+.block {overflow:hidden;}
+/*=============================================*/
+.slika-desno {
+	float:right;
+	margin:0 0 5px 10px;
+}
+.slika-levo {
+	float:left;
+	margin:0 10px 5px 0;
+}
+/*=============================================*/
+.vest {
+	float:left;
+	width:320px;
+	margin-right:10px;
+}
+.vest img {
+	float:left;
+	margin:0 5px 1px 0;
+}
+.vest h3 {
+	color:#666666;
+}
+.vest:nth-of-type(3n) {
+	margin-right:0;
+}
+/*=============================================*/
+.galery-image{
+ 	float:left;
+ 	width:320px;
+	margin-right:10px;
+}
+.galery-image a{
+	display:block;
+}
+.galery-image a img{
+	max-width:100%;
+	height:auto;
+}
+.galery-image:nth-of-type(3n){
+	margin-right:0;
+}
+/*#clear{clear:both;}*/
+/*=======================================================*/
+#dm {
+	float:right;
+	margin:30px 30px 0 0;
+}
+#dm a {
+	color:#ffffff;
+	width:16px;
+	height:16px;
+	display:block;
+	float:left;
+	overflow:hidden;
+	margin:0 0 0 20px;
+	text-indent:-10000px;
+	background-image:url(./images/sprite.png);
+}
+#dm a.dmFb { background-position:0 0;}
+#dm a.dmTw { background-position:-16px 0;}
+#dm a.dmDr { background-position:-32px 0;}
+
+#dm a.dmFb:hover { background-position:0 -16px;}
+#dm a.dmTw:hover { background-position:-16px -16px;}
+#dm a.dmDr:hover { background-position:-32px -16px;}
+/*///////////////////////////////////////////////////////////*/
+/*///////////////////////////////////////////////////////////*/
+/*///////////////////////////////////////////////////////////*/
+/*MEDIA SECTION:*/
+
+@media screen and (min-width:1024px) and (max-width:1260px) {
+	.wrapper {
+		width:960px;
+	}
+
+	#main {
+		width:940px;
+	}
+
+	.vest {
+		width:300px;
+	}
+
+	.galery-image{
+ 		float:left;
+ 		width:300px;
+		margin-right:20px;
+	}
+	.galery-image a img{
+		width:100%;
+		height:auto;
+	}
+
+	/*End of first media query*/
+}
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+	.wrapper {
+		width:600px;
+	}
+
+	#main{
+		float:none;
+		width:auto;
+	}
+
+	.vest {
+		float:none;
+		width:auto;
+		margin:0;
+	}
+
+	.galery-image{
+ 		float:left;
+ 		width:280px;
+	}
+	.galery-image a img{
+		width:100%;
+		height:auto;
+	}
+	.galery-image:nth-of-type(3n){
+		margin-right:auto;
+	}
+	
+	/*End of second media query*/
+}
+
+@media screen and (max-width:767px) {
+	.wrapper {
+		width:90%;
+	}
+
+	#nav {
+		float:none;
+		padding-left:0;
+	}
+	#nav ul li {
+		float:none;
+		text-align:center;
+	}
+
+	#main{
+		float:none;
+		width:auto;
+	}
+
+	.vest {
+		float:none;
+		width:auto;
+		margin:0;
+	}
+
+	.slika-desno,
+	.slika-levo {
+		float:none;
+		margin:0;	
+	}
+
+	#dm{
+		float:none;
+		margin:20px auto;
+		overflow:hidden;
+		width:120px;
+	}
+	#dm a{
+		margin:0 22px;
+	}
+
+	.galery-image{
+ 		float:none;
+		margin: 0 auto;
+	}
+	.galery-image a img{
+		width:100%;
+		height:auto;
+	}
+	.galery-image:nth-of-type(3n){
+		margin-right:auto;
+	}
+
+	#logo{
+		text-align: center;
+	}
+
+
+}
