@@ -13,7 +13,45 @@
             Even entry-level ‘1’ models include alloy wheels, air-conditioning, all-round electric windows and Bluetooth for connecting your phone wirelessly. Sat-nav and parking sensors come as standard on grade 2 and above.
         </p>
     </a>
+
+    <button id="myBtn">View More</button>
+    <div id="myModal" class="modal">
+         <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing, elit. A quidem qui, provident inventore, earum aut eveniet nisi soluta deserunt, ad dolorem similique vel consequatur iure accusamus adipisci ipsam ea voluptates.
+            Lorem ipsum dolor sit amet, consectetur adipisicing, elit. A quidem qui, provident inventore, earum aut eveniet nisi soluta deserunt, ad dolorem similique vel consequatur iure accusamus adipisci ipsam ea voluptates.
+            Lorem ipsum dolor sit amet, consectetur adipisicing, elit. A quidem qui, provident inventore, earum aut eveniet nisi soluta deserunt, ad dolorem similique vel consequatur iure accusamus adipisci ipsam ea voluptates.
+        </p>
+      </div>
+
+    </div>
+
 </div>
+
+<script>
+    // Get the modal
+    var modal = document.getElementById("myModal");
+    // Get the button that opens the modal
+    var btn = document.getElementById("myBtn");
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+    // When the user clicks the button, open the modal 
+    btn.onclick = function() {
+    modal.style.display = "block";
+    }
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+    modal.style.display = "none";
+    }
+    // When the user clicks anywhere of the modal, close it
+    window.onclick = function(event){
+        if(event.target == modal){
+            modal.style.display = "none";
+        }
+    }
+</script>
 
 <div class="block">
     <h2>List of the favorites cars:</h2>
