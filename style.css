@@ -44,6 +44,9 @@ a{
 	clear:both;
 	overflow:hidden;
 }
+#footer p{
+	text-align:center;
+}
 /*======================================================*/
 #logo{
 	/*float:left;*/
@@ -152,6 +155,35 @@ a{
 #dm a.dmFb:hover { background-position:0 -16px;}
 #dm a.dmTw:hover { background-position:-16px -16px;}
 #dm a.dmDr:hover { background-position:-32px -16px;}
+
+#f_links{
+	overflow:hidden;
+	margin:0 auto;
+}
+#f_links ul{
+	margin:0px;
+	padding:0px;
+}
+#f_links ul li{
+	list-style:none;
+}
+#f_links_1 ul li, #f_links_2 ul li {
+	/*float:left;*/
+	padding: 10px 5px 5px 20px;
+	/*text-align:center;*/
+
+}
+#f_links_1,#f_links_2{
+	width: 50%;
+	float:left;
+	text-align:center;
+}
+
+#f_links_2 .fa{
+	font-size: 25px;
+}
+
+
 /*///////////////////////////////////////////////////////////*/
 /*///////////////////////////////////////////////////////////*/
 /*///////////////////////////////////////////////////////////*/
@@ -271,5 +303,9 @@ a{
 		text-align: center;
 	}
 
+	#f_links_1,#f_links_2{
+		width: auto;
+		float:none;
+	}
 
 }
